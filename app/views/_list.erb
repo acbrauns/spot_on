@@ -1,0 +1,17 @@
+<div class="list_view">
+
+
+    <table class="events_list">
+        <% @events.reverse_each do |event| %>
+          <tr>
+            <td><%= (event.start_date).strftime("%a") %></td>
+            <td><%= (event.start_time).strftime("%I:%M %p") %></td>
+          </tr>
+          <tr class="bottom_line">
+            <td><%= (event.start_date).strftime("%d")%></td>
+            <td><%= event.title %></td>
+          </tr>
+        <% end %>
+    </table>
+
+</div>

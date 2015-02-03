@@ -1,3 +1,7 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+}
 .container {
   margin: 20px auto;
   width: 800px;
@@ -56,4 +60,10 @@ input[type=text], input[type=date] {
     border-bottom: 2px solid #000000;
 }
 
+.grid_view{
+  display: none;
+}
 
+.bottom_line{
+  border-bottom: 2px solid #000000;
+}
