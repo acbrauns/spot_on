@@ -10,7 +10,7 @@ $(document).ready(function () {
     }).done(function(response){
       event = response.event;
       $('.events_list').prepend('<li>' + event.title + '</li>');
-      $('form.create_event').find("input[type=text]").val("");
+      $('form.create_event').find("input[type=text], input[type=date]").val("");
     });
   });
 

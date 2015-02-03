@@ -50,6 +50,10 @@ input {
   margin-bottom: 10px;
 }
 
-
+input[type=text], input[type=date] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
 
 

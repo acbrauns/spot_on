@@ -1,20 +1,18 @@
+<form class="create_event" action="/events/create" method="post">
+  <input placeholder="What" type="text" name="title"><br>
+  <input placeholder="Start Date" type="text" onfocus="(this.type='date')"  name="start_date"><br>
+  <input placeholder="End Date" type="text" onfocus="(this.type='date')"  name="end_date"><br>
+  <!-- <input value="Start Date" type="date" name="start_date"><br> -->
+  <!-- <input placeholder="End Date" type="date" name="end_date"><br> -->
+  <input placeholder="Where" type="text" name="location"><br>
+  <input type="submit" value="Add Event">
 
+</form>
 
+<ul class="events_list">
+  <% @events.reverse_each do |event| %>
+    <li><%= event.title %><%= (event.start_date).strftime("%a") %></li>
+  <% end %>
+</ul>
 
-    <form class="create_event" action="/events/create" method="post">
-    <input placeholder="Name" type="text" name="title"><br>
-    <input placeholder="Start Date" type="text" name="start_date"><br>
-    <input placeholder="End Date" type="text" name="end_date"><br>
-    <input placeholder="Location" type="text" name="location"><br>
-
-
-    <input type="submit" value="Add Event">
-
-  </form>
-
-  <ul class="events_list">
-    <% @events.reverse_each do |event| %>
-      <li><%= event.title %></li>
-    <% end %>
-  </ul>
 
