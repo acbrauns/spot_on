@@ -1,13 +1,11 @@
 <div class="grid_view">
 
-  <h1>GRID VIEW!</h1>
-
   <div>
 
     <% @events.reverse_each do |event| %>
       <div class="col-xs-3 grid-container">
         <header class="tile_header">
-          <p>kljklj<p>
+          <p><b><%= (event.start_date).strftime("%a")%></b><p>
         </header>
         <p><%= event.title %></p>
       </div>
