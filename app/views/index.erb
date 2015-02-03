@@ -5,13 +5,15 @@
   <!-- <input value="Start Date" type="date" name="start_date"><br> -->
   <!-- <input placeholder="End Date" type="date" name="end_date"><br> -->
   <input placeholder="Where" type="text" name="location"><br>
+  <input type="time" name="start_time">
+  <input type="time" name="end_time">
   <input type="submit" value="Add Event">
 
 </form>
 
 <ul class="events_list">
   <% @events.reverse_each do |event| %>
-    <li><%= event.title %><%= (event.start_date).strftime("%a") %></li>
+    <li><%= event.title %><%= (event.start_date).strftime("%a") %> <%= event.start_time %></li>
   <% end %>
 </ul>
 

@@ -8,6 +8,7 @@ $(document).ready(function () {
       type: 'POST',
       data: $(this).serialize()
     }).done(function(response){
+      console.log(response);
       event = response.event;
       $('.events_list').prepend('<li>' + event.title + '</li>');
       $('form.create_event').find("input[type=text], input[type=date]").val("");
