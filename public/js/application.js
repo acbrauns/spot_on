@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
   $("form.create_event").on("submit", function(e){
     e.preventDefault();
     $.ajax({
@@ -8,7 +7,6 @@ $(document).ready(function () {
       type: 'POST',
       data: $(this).serialize()
     }).done(function(response){
-      // event = response.event;
       $('.events_list').prepend('<tr><td>' + response.day + '</td><td>'
         + response.start_time + '</td><tr class="bottom_line"><td>' +
         response.month_day + '</td><td>' + response.title + '</td></tr>');
@@ -25,6 +23,7 @@ $(document).ready(function () {
     $('.list_view').show();
     $('.grid_view').hide();
   });
+
 
   $(".grid_toggle").on("click", function(e){
     e.preventDefault();

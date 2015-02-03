@@ -5,8 +5,6 @@ get '/' do
   erb :index
 end
 
-
-
 post '/events/create' do
   event = Event.create(params)
   day = (event.start_date).strftime("%a")

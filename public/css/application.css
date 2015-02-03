@@ -60,10 +60,22 @@ input[type=text], input[type=date] {
     border-bottom: 2px solid #000000;
 }
 
+div.list_view{
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+
 .grid_view{
   display: none;
 }
 
 .bottom_line{
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+table{
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
 }
