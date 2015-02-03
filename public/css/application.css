@@ -11,7 +11,6 @@ body {
   margin: 20px auto;
   width: 800px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
 }
 
 .container h1 {
@@ -60,10 +59,12 @@ input {
   width: 100%;
 }
 
-input[type=text], input[type=date] {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #ffffff;
+input[type=text], input[type=date], input[type=time] {
+  color: #FFF;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffF;
+  margin-top: 10px;
 }
 
 input[type=time]{
@@ -84,6 +85,7 @@ form{
   margin: 0 auto;
   width: 50%;
   text-align: left;
+  margin-bottom: 5%;
 }
 .grid_view{
   display: none;
@@ -102,9 +104,12 @@ form{
 }
 
 .bottom_row td p{
-  color: #FFF;
   font-size: 1.2em;
   margin-bottom: 2%;
+}
+
+.event_title{
+  color: #FFF;
 }
 
 table{
@@ -124,3 +129,37 @@ table{
 td > *{
   margin: 0px;
 }
+
+.add_button{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+
+.col-xs-3 {
+  position: relative;
+  min-height: 100px;
+  float: left;
+  width: 30%;
+  margin-left:1.5%;
+  margin-right: 1.5%;
+}
+
+.grid-container  {
+  width: 30%;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.tile_header{
+  height: 3%;
+  background-color: gray;
+  text-align: right;
+}
+
+
+
+
+

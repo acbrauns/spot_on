@@ -7,9 +7,9 @@ $(document).ready(function () {
       type: 'POST',
       data: $(this).serialize()
     }).done(function(response){
-      $('.events_list').prepend('<tr><td>' + response.day + '</td><td>'
-        + response.start_time + '</td><tr class="bottom_line"><td>' +
-        response.month_day + '</td><td>' + response.title + '</td></tr>');
+      $('.events_list').prepend('<tr class="top_row"><td><p>' + response.day + '</p></td><td><p>'
+        + response.start_time + ' - ' + response.end_time + '</p></td><tr class="bottom_row"><td><p>' +
+        response.month_day + '</p></td><td><p class="event_title">' + response.title + '</p></td></tr>');
 
       $('form.create_event').find("input[type=text], input[type=date], input[type=time]").val("");
     });

@@ -1,4 +1,16 @@
 <div class="grid_view">
 
-<h1>GRID VIEW!</h1>
+  <h1>GRID VIEW!</h1>
+
+  <div>
+
+    <% @events.reverse_each do |event| %>
+      <div class="col-xs-3 grid-container">
+        <header class="tile_header">
+          <p>kljklj<p>
+        </header>
+        <p><%= event.title %></p>
+      </div>
+    <% end %>
+  </div>
 </div>

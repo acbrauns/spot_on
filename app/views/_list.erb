@@ -5,11 +5,11 @@
         <% @events.reverse_each do |event| %>
           <tr class="top_row">
             <td><p><%= (event.start_date).strftime("%a") %></p></td>
-            <td><p><%= (event.start_time).strftime("%I:%M %p") %></p></td>
+            <td><p><%= (event.start_time).strftime("%I:%M %p") %> - <%= (event.end_time).strftime("%I:%M %p") %> </p></td>
           </tr>
           <tr class="bottom_row">
             <td><p><%= (event.start_date).strftime("%d")%></p></td>
-            <td><p><%= event.title %></p></td>
+            <td><p class="event_title"><%= event.title %></p></td>
           </tr>
         <% end %>
     </table>
