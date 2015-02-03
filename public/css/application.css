@@ -1,6 +1,11 @@
 body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
+   background: #292842;
+   /*background: #252734;*/
+   /*color: #392C4F ;*/
+   /*color: #942BD2 ;*/
+   color: #A32DE6 ;
 }
 .container {
   margin: 20px auto;
@@ -58,7 +63,7 @@ input {
 input[type=text], input[type=date] {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
 }
 
 input[type=time]{
@@ -82,13 +87,24 @@ form{
 }
 .grid_view{
   display: none;
-    width: 100%;
+  width: 100%;
   margin: 0px auto;
   text-align: center;
 }
 
-.bottom_line{
-  border-bottom: 1px solid #000000;
+.top_row td p {
+  font-size: 0.8em;
+  margin-top: 2%;
+}
+
+.bottom_row{
+  border-bottom: 1.5px solid #A32DE6;
+}
+
+.bottom_row td p{
+  color: #FFF;
+  font-size: 1.2em;
+  margin-bottom: 2%;
 }
 
 table{
@@ -103,4 +119,8 @@ table{
 
 .right{
    float: right;
+}
+
+td > *{
+  margin: 0px;
 }

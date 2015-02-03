@@ -3,13 +3,13 @@
 
     <table class="events_list">
         <% @events.reverse_each do |event| %>
-          <tr>
-            <td><%= (event.start_date).strftime("%a") %></td>
-            <td><%= (event.start_time).strftime("%I:%M %p") %></td>
+          <tr class="top_row">
+            <td><p><%= (event.start_date).strftime("%a") %></p></td>
+            <td><p><%= (event.start_time).strftime("%I:%M %p") %></p></td>
           </tr>
-          <tr class="bottom_line">
-            <td><%= (event.start_date).strftime("%d")%></td>
-            <td><%= event.title %></td>
+          <tr class="bottom_row">
+            <td><p><%= (event.start_date).strftime("%d")%></p></td>
+            <td><p><%= event.title %></p></td>
           </tr>
         <% end %>
     </table>
