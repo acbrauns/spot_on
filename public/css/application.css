@@ -2,12 +2,8 @@ body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
    background: #292842;
-   /*background: #252734;*/
-   /*color: #392C4F ;*/
-   /*color: #942BD2 ;*/
    color: #A32DE6 ;
 }
-
 
 .container {
   margin: 20px auto;
@@ -23,35 +19,23 @@ body {
 nav {
   width: 100%;
   height: 40px;
-  font-weight: bold;
-}
-
-nav .brand, nav .brand a {
-  margin-left: 25px;
-  font-size: 18pt;
-  text-decoration: none;
-  color: #444;
-  width: 60%;
-  display: inline-block;
 }
 
 nav ul {
   display: inline-block;
   width: 30%;
-  text-align: right;
+  text-align: center;
+  margin-left: 60%;
 }
 
 nav li {
-  margin-right: 25px;
+  margin-left: 25px;
   display: inline;
+  color: #8BABC0
 }
 
-nav li a {
-  color: gray;
-  text-decoration: none;
-}
 
-nav li a:hover {
+nav li:hover {
   text-decoration: underline;
 }
 
@@ -96,7 +80,7 @@ form{
   text-align: center;
 }
 
-.top_row td p {
+.top_row td p  {
   font-size: 0.8em;
   margin-top: 2%;
 }
@@ -133,9 +117,14 @@ td > *{
 }
 
 .add_button{
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 2%;
+  width: 33%;
+  margin-left: 33%;
+  margin-top: 5%;
+  background-color: #8BABC0;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  height: 1.5em;
 }
 
 .col-xs-3 {
@@ -167,8 +156,6 @@ td > *{
 .tile_header p{
   margin: 0px;
   padding: 10px;
-  /*margin-left: 5%;*/
-  /*margin-bottom: 10px;*/
   line-height: 1.5;
   color: #292842;
   font-size: 0.8em;
@@ -182,11 +169,11 @@ td > *{
   font-size: 1.1em;
 }
 
-.tile_text p{
-  /*margin-top: 0px;*/
-  /*margin-bottom: 0px;*/
+.tile_text p {
   margin: 10px;
 }
+
+
 
 
 
