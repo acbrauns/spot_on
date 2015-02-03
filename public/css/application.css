@@ -52,22 +52,39 @@ nav li a:hover {
 
 input {
   margin-bottom: 10px;
+  width: 100%;
 }
 
 input[type=text], input[type=date] {
     background: transparent;
     border: none;
-    border-bottom: 2px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 
+input[type=time]{
+  text-align: center;
+}
+
+input.half_width{
+  width: 47%;
+}
 div.list_view{
   width: 100%;
   margin: 0px auto;
   text-align: center;
 }
 
+
+form{
+  margin: 0 auto;
+  width: 50%;
+  text-align: left;
+}
 .grid_view{
   display: none;
+    width: 100%;
+  margin: 0px auto;
+  text-align: center;
 }
 
 .bottom_line{
@@ -78,4 +95,12 @@ table{
   text-align: left;
   margin: 0 auto;
   width: 50%;
+}
+
+.left{
+   float: left;
+}
+
+.right{
+   float: right;
 }
